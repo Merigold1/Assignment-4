@@ -42,6 +42,7 @@ function handleReadData() {
     const dataString = localStorage.getItem(PORTOFOLIO_STORAGE)
     const initialData = JSON.parse(dataString);
 
+    // jika tidak ada data di local storage, maka memakai initial bioData di atas
     if (!initialData) {
         localStorage.setItem(PORTOFOLIO_STORAGE, JSON.stringify(bioData))
         initialData = bioData;
@@ -104,7 +105,8 @@ submit.addEventListener('submit', function (event) {
 
 
 
-
+    // mengupdate data array object 
+    
     const updateBioData =
     {
         id: generateDataId(),
