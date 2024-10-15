@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+    <title>CRUD Portofolio</title>
+</head>
+
+<body>
+  
+    <nav>Portofolio</nav>
+    <section id="main">
+      <img id="image" src="./song to song (2017).jpg" alt="gua banget">
+      
+      <div id="text-container">
+        <h3 id="bio-nama"></h3>
+        <p id="bio-role"></p>
+        
+        <div id="button-container">
+          <button id="edit-button" type="button" class="btn btn-primary btn-sm">Edit</button>
+          <button id="contact-button" type="button" class="btn btn-outline-success btn-sm">Resume</button>
+          
+        </div>
+        
+      </div>
+      
+      <div id="keterangan-kanan">
+        <div class="bold-text">
+          <p>availability</p>
+          <p>Usia</p>
+          <p>Lokasi</p>
+          <p>Pengalaman</p>
+          <p>Email</p>
+        </div>
+      </div>
+      
+      <div id="data-keterangan">
+        <p id="bio-availability"></p>
+        <p id="bio-usia"></p>
+        <p id="bio-lokasi"></p>
+        <p id="bio-pengalaman"></p>
+        <p id="bio-email"></p>
+      </div>
+      
+    </section>
+
+    
+    <form id="input-form">
+      <div class="mb-3">
+        <label for="Nama" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="Nama" value="">
+      </div>
+      <div class="mb-3">
+        <label for="Role" class="form-label">Role</label>
+        <input type="text" class="form-control" id="Role">
+      </div>
+      <div class="mb-3">
+        <label for="availability" class="form-label">Availability</label>
+        <input type="text" class="form-control" id="availability">
+      </div>
+      <div class="mb-3">
+        <label for="Usia" class="form-label">Usia</label>
+        <input type="text" class="form-control" id="Usia">
+      </div>
+      <div class="mb-3">
+        <label for="Lokasi" class="form-label">Lokasi</label>
+        <input type="text" class="form-control" id="Lokasi">
+      </div>
+      <div class="mb-3">
+        <label for="Pengalaman" class="form-label">Pengalaman</label>
+        <input type="text" class="form-control" id="Pengalaman">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="emal" class="form-control" id="email">
+      </div>
+      <button class="btn btn-primary" id="submit-button">Submit</button>
+      
+    </form>
+    
+  <script  src="./main.js"></script>
+  </body>
+  
+  </html>
